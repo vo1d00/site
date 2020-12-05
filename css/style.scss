@@ -2,6 +2,7 @@ $black: #181818;
 $purple: #4452FE;
 $white: #FFFFFF;
 $blue: #02E4C0;
+$gray: #cccccc;
 
 // First block
 
@@ -67,16 +68,18 @@ body {
     max-width: 80vw;
     width: 100%;
     text-align: center;
+    margin: 0 auto;
     margin-top: 25vh;
     margin-bottom: 15vh;
 }
 
 .title {
-    font-size: 8vh;
+    font-size: 5vw;
     color: $white;
     font-weight: 600;
     max-width: 80vw;
     width: 100%;
+    margin: 0 auto;
 }
 
 .subtitle {
@@ -147,11 +150,14 @@ body {
 
 .features {
     padding-top: 25vh;
+    margin: 0 auto;
+    text-align: center;
 
     .title {
-        font-weight: 400;
         text-align: center;
-        margin-bottom: 5vh;
+        max-width: 600px;
+        width: 100%;
+        font-weight: 500;
     }
 
     .subtitle {
@@ -160,6 +166,10 @@ body {
         width: 100%;
         margin-bottom: 25vh;
     }
+}
+
+.blc3 {
+    margin-bottom: 25vh;
 }
 
 .feature__title {
@@ -186,6 +196,75 @@ body {
 
 .feature {
     color: $white;
+}
+
+
+
+.crd {
+    margin-bottom: 15vh;
+    margin: 5vh;
+}
+
+.card__bg {
+    border-radius: 8px;
+    max-height: 70vh;
+    height: 100%;
+    background-color: $white;
+}
+
+.card__text {
+    text-align: center;
+}
+
+.card__title {
+    text-align: center;
+    font-size: 3vh;
+    font-weight: 600;
+    padding-top: 3vh;
+}
+
+.card__subtitle {
+    text-align: center;
+    font-size: 2.2vh;
+    font-weight: 400;
+    margin-top: 3vh;
+    padding: 0 10vh 0 10vh;
+    padding-bottom: 5vh;
+}
+
+.card__btn {
+    padding: 16px 28px;
+    border: 1px solid $purple;
+    color: $white;
+    background-color: $purple;
+    text-align: center;
+    margin: 0 auto;
+    transition: .2s ease-out;
+
+    &:hover {
+        text-decoration: none;
+        color: $purple;
+        background-color: $gray;
+        border-color: $gray;
+    }
+}
+
+.card__image {
+    width: 85%;
+}
+
+.img1 {
+    margin-top: 12vh;
+    padding-bottom: 6vh;
+    margin: auto;
+    margin-top: 5vh;
+}
+
+.img2 {
+    margin-top: 10vh;
+    border-radius: 16px;
+    margin: auto;
+    margin-top: 2vh;
 }
 
 // Media
@@ -225,6 +304,31 @@ body {
         margin-left: 5vh;
     }
 
+    .features {
+        text-align: center;
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+    }
+
+    .card__title {
+        font-size: 3vh;
+    }
+
+    .card__subtitle {
+        font-size: 2vh;
+    }
+
+    .crd {
+        margin: 0 15vw;
+        margin-top: 8vh;
+        margin-bottom: 5vh;
+    }
+
+    .card__bg {
+        max-height: 85vh;
+        height: 100%;
+    }    
+
 }
 
 @media screen and (max-width: 790px) {
@@ -238,18 +342,26 @@ body {
     .blc {
         margin: auto;
     }
-
 }
 
 
 @media screen and (max-width: 768px) {
 
     .title {
-        font-size: 7vh;
+        font-size: 7vw;
     }
 
     .subtitle {
         font-size: 2vh;
+    }
+
+    .content__text {
+        margin-bottom: 7vh;
+        margin-top: 7vh;
+    }
+
+    .card__subtitle {
+        font-size: 1.5vh;
     }
 
 }
@@ -257,7 +369,7 @@ body {
 @media screen and (max-width: 576px) {
 
     .title {
-        font-size: 5.5vh;
+        font-size: 7vw;
     }
 
     .chat {
@@ -271,6 +383,16 @@ body {
     .feature__subtitle {
         font-size: 1.5vh;
     }
+
+    .features {
+        text-align: center;
+        margin: 0;
+    }
+
+    .card__subtitle {
+        padding: 0 5vh 0 5vh;
+        padding-bottom: 3vh;
+    }    
 
 }
 
